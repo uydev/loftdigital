@@ -35,7 +35,7 @@ class BuildHTML
     
     private function buildTruckHtml($delivery)
     {
-        return "<li>Take truck $delivery[Transportation_number] from $delivery[Departure] to $delivery[Arrival].</li>";
+        return "<li>Take truck $delivery[Transportation] from $delivery[Departure] to $delivery[Arrival].</li>";
     }
     
     
@@ -47,7 +47,7 @@ class BuildHTML
   
     private function buildPlaneHtml($delivery)
     {
-        return "<li>From $delivery[Departure], take flight $delivery[Transportation_number] to $delivery[Arrival].</li>";
+        return "<li>From $delivery[Departure], take flight $delivery[Transportation] to $delivery[Arrival].</li>";
     }
     
 
